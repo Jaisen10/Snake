@@ -40,7 +40,7 @@ c.font="bold 20px Courier New";
 c.fillText("Click anywhere", 160, 255);
 c.fillText("to play.", 160, 280);
 
-onclick=function()
+onkeydown=function()
 {
   let k = event.key.toString();  
   if (k=="ArrowUp" && Game.a[2] != Game.a[4]) {Game.dir = 2;}
@@ -49,7 +49,7 @@ onclick=function()
   if (k=="ArrowLeft" && Game.a[3] != Game.a[5]) {Game.dir = 3;}
 }
 
-onmousedown = function()
+onclick=function()
 {
   if (Game.going == 0)
   {
