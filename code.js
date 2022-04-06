@@ -109,7 +109,7 @@ function myFunction(c)
     
     for (let i=0; i<400; i++)
     {
-      if (!arr.includes(Game.array[i]))
+      if (!arr.includes(Game.array[i].toString()))
       {
         let l = array1.length;
         array1[l] = new Array(2);
